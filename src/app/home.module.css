@@ -63,6 +63,10 @@
   padding-top: 36px;
 }
 
+.servicesSection {
+  padding-bottom: 175px;
+}
+
 .sectionCue {
   display: inline-flex;
   align-items: center;
@@ -125,5 +129,9 @@
 
   .teamHero + :global(.section) {
     padding-top: 26px;
+  }
+
+  .servicesSection {
+    padding-bottom: 120px;
   }
 }
