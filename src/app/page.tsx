@@ -16,7 +16,7 @@ const stepCopy = ["별도의 회원가입 없이 GitHub 계정으로 3초 만에
 
 export default function Home() {
   return <main>
-    <header className="header"><a className="logo" href="#top"><b>&lt;/&gt;</b> READTHEM<span>.md</span></a><nav><a href="#features">기능</a><a href="#how">작동 방식</a><a href="#widget">위젯</a></nav><a className="button small" href="#start"><GithubIcon /> <span>GitHub으로 시작</span></a></header>
+    <header className="header"><a className="logo" href="#top" aria-label="ALLDAY PROJECT" /><nav><a href="#features">기능</a><a href="#how">작동 방식</a><a href="#widget">위젯</a></nav><a className="button small" href="#start"><GithubIcon /> <span>GitHub으로 시작</span></a></header>
     <section className="hero wrap" id="top"><div className="hero-copy"><p className="pill"><i /> 개발자 전용 · GitHub OAuth</p><h1>리뷰가 곧 <strong>독서 이력</strong>이 됩니다</h1><p>READTHEM.md는 개발자를 위한 도서 리뷰 플랫폼입니다. 읽은 책의 리뷰를 남기면 자동으로 독서 이력에 쌓이고, 그 통계를 GitHub 프로필 README.md 위젯으로 공유할 수 있어요.</p><div className="actions"><a className="button" href="#start"><GithubIcon /> GitHub으로 시작하기</a><a className="button ghost" href="#widget">위젯 미리보기 <b>→</b></a></div><code>// 리뷰 작성은 개발자 계정만 가능합니다</code></div>
       <div className="readme-card"><div className="windowbar"><i /><i /><i /><span>octocat/octocat/README.md</span></div><div className="readme"><p>### 📚 My Reading</p><Heatmap /><div className="badges"><span>올해 42권</span><span>리뷰 128개</span><span>연속 12주</span></div></div></div>
     </section>
@@ -24,6 +24,6 @@ export default function Home() {
     <section className="section ruled" id="how"><div className="wrap"><div className="heading"><code>// how it works</code><h2>시작하는 데 4단계면 충분합니다</h2></div><ol className="steps">{steps.map((step,index) => <li key={step}><b>0{index + 1}</b><h3>{step}</h3><p>{stepCopy[index]}</p></li>)}</ol></div></section>
     <section className="section ruled" id="widget"><div className="wrap"><div className="heading"><code>// readme widget</code><h2>복사, 붙여넣기. 그게 전부입니다</h2><p>아래 한 줄을 프로필 스페셜 레포지토리 README.md에 넣으면 위젯이 렌더링됩니다.</p></div><div className="widget-grid"><div className="code-box"><div className="card-title"><span>README.md</span><em>markdown</em></div><pre><span className="muted">&lt;!-- READTHEM.md 위젯 --&gt;</span>{'\n'}<b>![My Reading]</b>(https://readthem.md/<i>octocat</i>/widget.svg)</pre></div><div className="widget-card"><div className="widget-title"><b>&lt;/&gt;</b><span>octocat<span>&apos;s reading</span></span></div><div className="stat-grid">{[["42","올해 읽은 책"],["128","작성한 리뷰"],["12주","연속 독서"],["Backend","즐겨 읽는 분야"]].map(([v,l])=><div key={l}><b>{v}</b><span>{l}</span></div>)}</div><Heatmap /></div></div></div></section>
     <section className="section ruled"><div className="wrap cta"><div><code>// your next commit</code><h2>당신의 다음 커밋은 <strong>한 권의 책</strong>입니다</h2><p>지금 GitHub 계정으로 시작하고, 첫 리뷰를 독서 이력에 새겨보세요. 그리고 프로필에 자랑하세요.</p><a className="button" id="start" href="#top"><GithubIcon /> GitHub으로 무료 시작</a></div></div></section>
-    <footer><a className="logo" href="#top"><b>&lt;/&gt;</b> READTHEM<span>.md</span></a><code>// built by developers, for developers</code><a aria-label="GitHub" href="#top"><GithubIcon /></a></footer>
+    <footer><a className="logo" href="#top" aria-label="ALLDAY PROJECT" /><code>// built by developers, for developers</code><a aria-label="GitHub" href="#top"><GithubIcon /></a></footer>
   </main>;
 }
