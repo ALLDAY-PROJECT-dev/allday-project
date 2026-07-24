@@ -30,7 +30,7 @@ export default function Home() {
             <span className={styles.headlineLine}>함께 성장한</span>
             <span className={styles.headlineLine}>세 명의 개발자가 모였습니다.</span>
           </h1>
-          <code>// we are ALLDAY, working to make every PROJECT better</code>
+          <code>{"// we are ALLDAY, working to make every PROJECT better"}</code>
         </div>
       </section>
       <section className={`section ${styles.servicesSection}`} id="features">
