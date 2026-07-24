@@ -32,9 +32,9 @@ export default function Home() {
             <i /> ALLDAY PROJECT · TEAM INTRODUCTION
           </p>
           <h1>
-            프로그래머스 데브코스에서<br />
-            함께 성장한<br />
-            세 명의 개발자가 모였습니다.
+            <span className={styles.headlineLine}>프로그래머스 데브코스에서</span>
+            <span className={styles.headlineLine}>함께 성장한</span>
+            <span className={styles.headlineLine}>세 명의 개발자가 모였습니다.</span>
           </h1>
           <code>// we are ALLDAY, working to make every PROJECT better</code>
         </div>
@@ -45,8 +45,7 @@ export default function Home() {
             <code className={styles.sectionCue}><DoubleChevronDownIcon /> what we make</code>
             <h2>우리가 만드는 것</h2>
             <p>
-              작지만 분명한 문제에서 시작해, 매일 더 나은 경험을 만드는 서비스를
-              만듭니다.
+              사용자에게 실제 가치를 주는 서비스를 만듭니다.
             </p>
           </div>
           <div className="feature-grid">
@@ -61,13 +60,12 @@ export default function Home() {
               </div>
               <h3 className="text-2xl!">READTHEM.md</h3>
               <p className="max-w-xl">
-                개발자를 위한 도서 리뷰 플랫폼. 읽고, 기록하고, 나의 독서 이력을
-                GitHub 프로필과 함께 공유합니다.
+                개발자를 위한 도서 리뷰 플랫폼. 나의 독서 이력을 GitHub 프로필과 함께 공유합니다.
               </p>
               <div className="mt-7 flex flex-wrap gap-2 text-[11px] text-[#666]">
-                <span className="bg-[#f5f5f5] px-2 py-1">Book Review</span>
-                <span className="bg-[#f5f5f5] px-2 py-1">GitHub</span>
-                <span className="bg-[#f5f5f5] px-2 py-1">Developer</span>
+                <span className="bg-[#f5f5f5] px-2 py-1">Community</span>
+                <span className="bg-[#f5f5f5] px-2 py-1">Review</span>
+                <span className="bg-[#f5f5f5] px-2 py-1">Recommendation</span>
               </div>
               <a
                 className="mt-8 inline-flex items-center gap-2 font-bold text-sm"
@@ -82,7 +80,7 @@ export default function Home() {
       <footer>
         <a className="logo" href="#top" aria-label="ALLDAY PROJECT" />
         <code>// built by developers, for developers</code>
-        <a aria-label="GitHub" href="#top">
+        <a aria-label="GitHub" href="https://github.com/ALLDAY-PROJECT-dev/allday-project" target="__blank">
           <GithubIcon />
         </a>
       </footer>

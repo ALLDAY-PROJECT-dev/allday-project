@@ -36,11 +36,16 @@
 }
 
 .teamHero :global(.hero-copy h1) {
-  max-width: 840px;
+  max-width: none;
   margin: 1.5rem 0 2.3rem;
-  font-size: clamp(2.8rem, 5.35vw, 4.9rem);
+  font-size: clamp(2.6rem, 5.85vw, 4.29rem);
   letter-spacing: -0.065em;
   line-height: 1.04;
+}
+
+.headlineLine {
+  display: block;
+  white-space: nowrap;
 }
 
 .teamHero :global(.hero-copy h1 strong) {
@@ -62,12 +67,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  animation: cueFloat 1.5s ease-in-out infinite;
 }
 
 .sectionCue svg {
   width: 12px;
   height: 12px;
-  animation: cueFloat 1.5s ease-in-out infinite;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -81,7 +86,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sectionCue svg { animation: none; }
+  .sectionCue { animation: none; }
 }
 
 @media (max-width: 760px) {
@@ -115,7 +120,7 @@
 
   .teamHero :global(.hero-copy h1) {
     margin: 1.2rem 0 1.8rem;
-    font-size: clamp(2.35rem, 10vw, 3.35rem);
+    font-size: clamp(1.25rem, 6vw, 2rem);
   }
 
   .teamHero + :global(.section) {
